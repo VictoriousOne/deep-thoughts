@@ -26,7 +26,7 @@ const ReactionForm = ({ thoughtId }) => {
             });
 
             // clear form value
-            setText('');
+            setBody('');
             setCharacterCount(0);
         } catch (e) {
             console.error(e);
@@ -41,7 +41,7 @@ const ReactionForm = ({ thoughtId }) => {
             </p>
             <form className="flex-row justify-center justify-space-between-md align-stretch" onSubmit={handleFormSubmit}>
             <textarea
-                    placeholder="Here's a new thought..."
+                    placeholder="Here's a new reaction..."
                     value={reactionBody}
                     className="form-input col-12 col-md-9"
                     onChange={handleChange}
